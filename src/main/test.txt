@@ -1,0 +1,10 @@
+My tetsing methods
+1. Created a local DB(MySQL)
+2. Created a user
+3. Created 'book_shop' database and entity tables
+4. First of all, tested only connection to DB.
+5. Then created CustomerService and CustomerDAOImpl(implements CustomerDAO interface) classes with CRUD methods
+6. Created a Main class which uses all four CRUD methods for the customers table
+7. Created some instances of Customer class
+8. Then I applied the CRUD methods one by one
+9. By using MySQL Workbench I verified that a Customer record was created, updated and deleted

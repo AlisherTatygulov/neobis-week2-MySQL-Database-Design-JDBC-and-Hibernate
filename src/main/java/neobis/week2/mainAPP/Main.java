@@ -32,10 +32,10 @@ public class Main {
             customerService.createCustomer(customer4);
                                                         */
 
-            Customer customerFromDB = customerService.findCustomerById(1L);
 
             System.out.println(customerService.getAllCustomers());
 
+            Customer customerFromDB = customerService.findCustomerById(1L);
             System.out.println(customerFromDB);
 
             customerFromDB.setName("Peter Jackson");
@@ -44,13 +44,6 @@ public class Main {
             customerService.deleteCustomer(2L);
 
             System.out.println(customerService.getAllCustomers());
-
-
-
-
-
-
-
 
 
         } catch (SQLException e) {
