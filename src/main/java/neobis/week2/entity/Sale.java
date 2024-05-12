@@ -1,9 +1,9 @@
-package neobis.week2.pojo;
+package neobis.week2.entity;
 
 import java.util.Date;
 
 public class Sale {
-    private int id;
+    private Long id;
     private Date date;
     private int bookId;
     private int quantitySold;
@@ -13,7 +13,7 @@ public class Sale {
     public Sale() {
     }
 
-    public Sale(int saleId, Date date, int bookId, int quantitySold, double totalPrice, int customerId) {
+    public Sale(Long saleId, Date date, int bookId, int quantitySold, double totalPrice, int customerId) {
         this.id = saleId;
         this.date = date;
         this.bookId = bookId;
@@ -23,11 +23,11 @@ public class Sale {
     }
 
     // Getters and setters
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

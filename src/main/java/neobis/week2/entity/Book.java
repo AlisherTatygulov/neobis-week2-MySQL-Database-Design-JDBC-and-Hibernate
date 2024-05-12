@@ -1,7 +1,7 @@
-package neobis.week2.pojo;
+package neobis.week2.entity;
 
 public class Book {
-        private int id;
+        private Long id;
         private String title;
         private String author;
         private String genre;
@@ -11,7 +11,7 @@ public class Book {
         public Book() {
         }
 
-        public Book(int bookId, String title, String author, String genre, double price, int quantityAvailable) {
+        public Book(Long bookId, String title, String author, String genre, double price, int quantityAvailable) {
             this.id = bookId;
             this.title = title;
             this.author = author;
@@ -20,11 +20,11 @@ public class Book {
             this.quantityAvailable = quantityAvailable;
         }
 
-        public int getBookId() {
+        public Long getBookId() {
             return id;
         }
 
-        public void setBookId(int bookId) {
+        public void setBookId(Long bookId) {
             this.id = bookId;
         }
 
@@ -68,4 +68,15 @@ public class Book {
             this.quantityAvailable = quantityAvailable;
         }
 
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", genre='" + genre + '\'' +
+                ", price=" + price +
+                ", quantityAvailable=" + quantityAvailable +
+                '}';
+    }
 }
